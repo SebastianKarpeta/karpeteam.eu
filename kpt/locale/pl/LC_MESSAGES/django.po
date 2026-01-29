@@ -1,0 +1,2 @@
+msgid "Aktywny?"
+msgstr "Aktywny?"
