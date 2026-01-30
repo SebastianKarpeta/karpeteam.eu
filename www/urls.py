@@ -19,8 +19,10 @@ from django.conf.urls.i18n import i18n_patterns
 from django.urls import path, include
 from django.contrib import admin
 from django.views.i18n import set_language
+from django.views.generic import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='/admin/', permanent=False)),
     path('i18n/setlang/', set_language, name='set_language'),  # endpoint do zmiany języka
 ]
 
